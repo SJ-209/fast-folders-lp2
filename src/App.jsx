@@ -6,6 +6,7 @@ import PricingSection from './components/PricingSection';
 import SecuritySection from './components/SecuritySection';
 import Footer from './components/Footer';
 
+
 function App() {
   return (
     <div className="min-h-screen bg-white">
