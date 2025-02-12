@@ -3,16 +3,15 @@ import { Folder } from 'lucide-react';
 
 function Footer() {
   return (
-    <footer className="bg-gray-900 text-white py-12">
+    <footer className="bg-gray-100 text-black py-12">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <Folder className="w-6 h-6" />
-              <span className="font-bold text-xl">Fast Folders</span>
+              <span className="font-bold text-xl">FAQ</span>
             </div>
             <p className="text-gray-400">
-            The Ultimate Google Gemini Chat Organizer
+            Frequently asked questions
             </p>
           </div>
           <div>

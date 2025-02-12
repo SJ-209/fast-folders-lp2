@@ -19,7 +19,7 @@ function Header() {
         </nav>
         <div className="flex items-center gap-4">
           {/* <button className="px-4 py-2 text-blue-600 hover:text-blue-700">Download</button> */}
-          <button className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+          <button className="px-4 py-2 bg-[#568f56] text-white rounded-lg hover:bg-green-600">
             Download
           </button>
         </div>
