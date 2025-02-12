@@ -24,7 +24,7 @@ function HeroSection() {
           <video
             controls
             type="video/mp4"
-            src="src/assets/FF Demo.mov"
+            // src="src/assets/FF Demo.mov"
             alt="Dashboard Preview"
             className="rounded-lg shadow-2xl w-1/2 h-auto border-0"
           />
