@@ -16,8 +16,8 @@ function App() {
       <HeroSection />
       <FeaturesSection />
       {/* <PricingSection />
-      <SecuritySection /> */}
-      <ScrollingReviews />
+      {/* <ScrollingReviews /> */}
+      {/* <SecuritySection /> */}
       <Footer />
     </div>
   );

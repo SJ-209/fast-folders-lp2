@@ -6,7 +6,7 @@ function HeroSection() {
   return (
     <section className="pt-32 pb-20 px-4 bg-gray-80">
       <div className="container mx-auto text-center">
-        <h1 className="organizeChats text-7xl md:text-7xl font-bold mb-6 text-black">
+        <h1 className="organizeChats  font-bold mb-6 text-black">
           Organize Your Chats<br />Like <span className='text-[#568f56]'>Never</span> Before
         </h1>
         <p className="middleText text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
@@ -27,13 +27,14 @@ function HeroSection() {
           </button>
         </div>
         <div className="flex justify-center">
-          <video
-            controls
-            type="video/mp4"
-            src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-            alt="Dashboard Preview"
-            className="rounded-lg shadow-2xl w-1/2 h-auto border-0"
-          />
+        <iframe
+            src="https://streamable.com/e/903pc9"
+            width="1066"
+            height="720"
+            frameBorder="0"
+            allowFullScreen
+            // className="rounded-lg shadow-2xl w-1/2 h-auto"
+          ></iframe>
         </div>
       </div>
     </section>
