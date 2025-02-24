@@ -18,17 +18,17 @@ function FeaturesSection() {
         <h2 className="text-3xl font-bold text-center mb-12">Why Choose Fast Folders?</h2>
         <div className="grid md:grid-cols-3 gap-8">
           <FeatureCard
-            icon={<Zap className="w-6 h-6 text-blue-600" />}
+            icon={<Zap className="w-6 h-6 text-blue-400" />}
             title="Lightning Fast"
             description="Instantly organize your chats by creating folders."
           />
           <FeatureCard
-            icon={<Search className="w-6 h-6 text-blue-600" />}
+            icon={<Search className="w-6 h-6 text-blue-400" />}
             title="Smart Search"
             description="Find any folder or chat in seconds with our powerful search capabilities."
           />
           <FeatureCard
-            icon={<Share2 className="w-6 h-6 text-blue-600" />}
+            icon={<Share2 className="w-6 h-6 text-blue-400" />}
             title="Easy Backups"
             description="Quick and easy import/export feature for backing up folder structures."
           />

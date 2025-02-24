@@ -6,7 +6,7 @@ function Header() {
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex items-center gap-2">
             <img
-            src="src/assets/ffmain.jpeg"
+            src="src/assets/ff3-main.jpg"
             alt="Dashboard Preview"
             className="rounded-lg shadow-2xl w-10, h-10"
             />
@@ -19,7 +19,7 @@ function Header() {
         </nav>
         <div className="flex items-center gap-4">
           {/* <button className="px-4 py-2 text-blue-600 hover:text-blue-700">Download</button> */}
-          <button className="px-4 py-2 bg-[#568f56] text-white rounded-lg hover:bg-green-600">
+          <button className="px-4 py-2 bg-[linear-gradient(45deg,_#4796e3_20%,_#9177c7_50%,_#ca6673_85%)] text-white rounded-lg hover:scale-110 transform transition duration-500">
             Download
           </button>
         </div>
