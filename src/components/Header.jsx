@@ -6,8 +6,8 @@ function Header() {
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex items-center gap-2">
             <img
-            src="src/assets/ff3-main.jpg"
-            alt="Dashboard Preview"
+            src="public/images/ff3-main.jpg"
+            alt="Fast Folders Logo"
             className="rounded-lg shadow-2xl w-10, h-10"
             />
           <span className="font-bold text-xl">Fast Folders</span>
