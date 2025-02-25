@@ -1,5 +1,5 @@
 import React from 'react';
-import { Zap, Search, Share2 } from 'lucide-react';
+import { Zap, Search, Share2, FolderPlus, FolderPen, ChevronRight } from 'lucide-react';
 
 function FeatureCard({ icon, title, description }) {
   return (
@@ -33,17 +33,17 @@ function FeaturesSection() {
             description="Quick and easy import/export feature for backing up folder structures."
           />
           <FeatureCard
-            icon={<Zap className="w-6 h-6 text-blue-400" />}
+            icon={<FolderPlus className="w-6 h-6 text-blue-400" />}
             title="Add folders and chats"
             description="Quickley create folders and add chats to them."
           />
           <FeatureCard
-            icon={<Search className="w-6 h-6 text-blue-400" />}
+            icon={<FolderPen className="w-6 h-6 text-blue-400" />}
             title="Change folder color"
             description="Assign any color to a folder for quicker locating."
           />
           <FeatureCard
-            icon={<Share2 className="w-6 h-6 text-blue-400" />}
+            icon={<ChevronRight className="w-6 h-6 text-blue-400" />}
             title="Expand folders"
             description="Quickly sea the first 3 chats in the folder with the expand folder button."
           />
