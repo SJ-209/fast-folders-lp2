@@ -22,19 +22,18 @@ function HeroSection() {
           >
             Add to Chrome <ArrowRight className="w-5 h-5" />
           </a>
-          <button className="px-8 py-4 border border-gray-300 rounded-lg hover:border-gray-400 flex items-center justify-center gap-2">
-            <Github className="w-5 h-5" /> View on GitHub
-          </button>
         </div>
-        <div className="flex justify-center">
-        <iframe
-            src="https://streamable.com/24ald3"
-            width="1066"
-            height="720"
+        <div id="video" className="flex justify-center">
+          <iframe
+            width="960"
+            height="540"
+            src="https://www.youtube.com/embed/pX3Lep7Os18"
+            title="YouTube video player"
             frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
-            // className="rounded-lg shadow-2xl w-1/2 h-auto"
-          ></iframe>
+            className="rounded-lg shadow-2xl"
+          />
         </div>
       </div>
     </section>

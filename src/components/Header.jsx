@@ -14,13 +14,19 @@ function Header() {
         </div>
         <nav className="hidden md:flex items-center gap-8">
           <a href="#features" className="text-gray-600 hover:text-gray-900">Features</a>
-          <a href="#pricing" className="text-gray-600 hover:text-gray-900">Pricing</a>
+          <a href="#video" className="text-gray-600 hover:text-gray-900">Video</a>
           <a href="#faq" className="text-gray-600 hover:text-gray-900">FAQ</a>
         </nav>
         <div className="flex items-center gap-4">
           {/* <button className="px-4 py-2 text-blue-600 hover:text-blue-700">Download</button> */}
           <button className="px-4 py-2 bg-[linear-gradient(45deg,_#4796e3_20%,_#9177c7_50%,_#ca6673_85%)] text-white rounded-lg hover:scale-110 transform transition duration-500">
+          <a
+            href="https://chromewebstore.google.com/detail/fast-folders-the-ultimate/dgmakhnmibfdnkhopleclbfmfncdmfhf"
+            target="_blank" // Opens in a new tab
+            rel="noopener noreferrer" // Security best practice
+          >
             Download
+            </a>
           </button>
         </div>
       </div>
