@@ -18,6 +18,11 @@ function Footer() {
       isOpen: false,
     },
     {
+      question: "Will Fast Folders be available on other browsers?",
+      answer: "We are currently working on a Firefox version of Fast Folders. Stay tuned!",
+      isOpen: false,
+    },
+    {
       question: "How do I contact Fast Folders support?",
       answer: "Reachout to us fastfolders@protonmail.com.",
       isOpen: false,
