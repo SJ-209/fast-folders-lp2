@@ -2,40 +2,40 @@
 
 import { useEffect, useState } from "react"
 import { Star } from "lucide-react"
+import review1 from "../assets/review-1.png"
+import review2 from "../assets/review-2.png"
 
 const reviews = [
   {
     id: 1,
-    name: "Helen",
-    avatar:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-12%20at%2022.26.45-lcrlQ0d74qIg2yfFp0zZo2UUJyzL1t.png",
-    content: "A great tool for ChatGPT power users.",
+    name: "לירן בלומנברג",
+    avatar: review1,
+    content: "Fast Folders is a must-have for Google Gemini users! 🗂 Quickly organize chats, access them easily, and save time. Highly recommended!",
     rating: 5,
   },
   {
-    id: 1,
-    name: "Helen",
-    avatar:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-12%20at%2022.26.45-lcrlQ0d74qIg2yfFp0zZo2UUJyzL1t.png",
-    content: "A great tool for ChatGPT power users.",
+    id: 2,
+    name: "Alexander Gerber",
+    avatar: review2,
+    content: "Great organizational tool, recommend to all!",
     rating: 5,
   },
-  {
-    id: 1,
-    name: "Helen",
-    avatar:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-12%20at%2022.26.45-lcrlQ0d74qIg2yfFp0zZo2UUJyzL1t.png",
-    content: "A great tool for ChatGPT power users.",
-    rating: 5,
-  },
-  {
-    id: 1,
-    name: "Helen",
-    avatar:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-12%20at%2022.26.45-lcrlQ0d74qIg2yfFp0zZo2UUJyzL1t.png",
-    content: "A great tool for ChatGPT power users.",
-    rating: 5,
-  },
+  // {
+  //   id: 1,
+  //   name: "Helen",
+  //   avatar:
+  //     "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-12%20at%2022.26.45-lcrlQ0d74qIg2yfFp0zZo2UUJyzL1t.png",
+  //   content: "A great tool for ChatGPT power users.",
+  //   rating: 5,
+  // },
+  // {
+  //   id: 1,
+  //   name: "Helen",
+  //   avatar:
+  //     "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-12%20at%2022.26.45-lcrlQ0d74qIg2yfFp0zZo2UUJyzL1t.png",
+  //   content: "A great tool for ChatGPT power users.",
+  //   rating: 5,
+  // },
   // ... (other reviews)
 ]
 
@@ -61,7 +61,7 @@ const ReviewCard = ({ name, avatar, content, rating }) => (
           >
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
           </svg>
-          Verified review
+          Verified review Chrome Webstore
         </p>
       </div>
     </div>
@@ -69,22 +69,24 @@ const ReviewCard = ({ name, avatar, content, rating }) => (
 )
 
 const ScrollingReviews = () => {
-  const [scrollPosition, setScrollPosition] = useState(0)
+  // Comment out the scrolling logic
+  // const [scrollPosition, setScrollPosition] = useState(0)
 
-  useEffect(() => {
-    console.log("ScrollingReviews component mounted")
-    const intervalId = setInterval(() => {
-      setScrollPosition((prevPosition) => (prevPosition + 1) % (reviews.length * 100))
-    }, 50)
+  // useEffect(() => {
+  //   console.log("ScrollingReviews component mounted")
+  //   const intervalId = setInterval(() => {
+  //     setScrollPosition((prevPosition) => (prevPosition + 1) % (reviews.length * 100))
+  //   }, 50)
 
-    return () => clearInterval(intervalId)
-  }, [])
+  //   return () => clearInterval(intervalId)
+  // }, [])
 
-  console.log("Rendering ScrollingReviews, scrollPosition:", scrollPosition)
+  // console.log("Rendering ScrollingReviews, scrollPosition:", scrollPosition)
 
   return (
-    <div className="w-full overflow-hidden bg-gray-80 py-12 rounded-lg">
-      <div
+    <div className=" overflow-hidden bg-gray-80 py-12 rounded-lg">
+      {/* Comment out the scrolling container */}
+      {/* <div
         className="flex"
         style={{
           transform: `translateX(-${scrollPosition}px)`,
@@ -93,6 +95,14 @@ const ScrollingReviews = () => {
       >
         {reviews.map((review) => (
           <div key={review.id} className="px-4" style={{ flex: "0 0 400px" }}>
+            <ReviewCard {...review} />
+          </div>
+        ))}
+      </div> */}
+      {/* Display the reviews in a static grid */}
+      <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        {reviews.map((review) => (
+          <div key={review.id} className="px-4">
             <ReviewCard {...review} />
           </div>
         ))}
