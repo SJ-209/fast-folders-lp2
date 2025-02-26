@@ -17,6 +17,11 @@ function Footer() {
       answer: "The free version of Fast Folders gives you access to create 3 folders and add 3 chats to each folder.",
       isOpen: false,
     },
+    {
+      question: "How do I contact Fast Folders support?",
+      answer: "Reachout to us fastfolders@protonmail.com.",
+      isOpen: false,
+    },
   ]);
 
   const toggleFAQ = (index) => {

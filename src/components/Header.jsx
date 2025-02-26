@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../assets/ff3-main.jpg';
 
 function Header() {
   return (
@@ -6,7 +7,7 @@ function Header() {
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex items-center gap-2">
             <img
-            src="public/images/ff3-main.jpg"
+            src={logo}
             alt="Fast Folders Logo"
             className="rounded-lg shadow-2xl w-10, h-10"
             />
