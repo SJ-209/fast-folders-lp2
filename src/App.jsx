@@ -15,7 +15,7 @@ function App() {
       <Header />
       <HeroSection />
       <FeaturesSection />
-      {/* <PricingSection />
+      <PricingSection />
       {/* <ScrollingReviews /> */}
       {/* <SecuritySection /> */}
       <Footer />
