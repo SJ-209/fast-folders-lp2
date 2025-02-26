@@ -42,7 +42,7 @@ function Footer() {
           <div className=" justify-center"> {/* Center the content */}
             <div className="faq w-full mb-8 flex justify-center"> {/* Added w-full */}
               {/* <span className="font-bold text-xl mr-2">FAQ</span> */}
-              <span className="font-bold text-6xl">Frequently Asked Questions</span>
+              <span className="font-bold text-4xl">Frequently Asked Questions</span>
             </div>
             <div className="questions">
                 {faqItems.map((item, index) => (

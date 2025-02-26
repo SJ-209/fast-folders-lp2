@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap');
+
 
 .organizeChats {
     font-size: 90px;
     text-shadow:  35px 20px 85px rgba(0, 0, 0, 0.391);
 }
+
+body {
+    font-family: "Google Sans", sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
 

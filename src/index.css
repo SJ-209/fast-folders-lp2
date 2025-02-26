@@ -3,3 +3,57 @@
 @tailwind utilities;
 
 
+/* Custom Utility Classes */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .container-padded {
+    @apply px-4 md:px-6 lg:px-8;
+  }
+
+  .touch-target {
+    @apply min-w-[44px] min-h-[44px];
+  }
+
+  /* Add more custom utility classes here as needed */
+}
+
+/* Responsive Font Sizes */
+html {
+  font-size: 93.75%; /* Default font size for smaller screens (15px) */
+}
+
+@media (min-width: 640px) { /* sm: */
+  html {
+    font-size: 100%; /* 16px */
+  }
+}
+
+@media (min-width: 768px) { /* md: */
+  html {
+    font-size: 106.25%; /* 17px */
+  }
+}
+
+@media (min-width: 1024px) { /* lg: */
+  html {
+    font-size: 112.5%; /* 18px */
+  }
+}
+
+@media (min-width: 1280px) { /* xl: */
+  html {
+    font-size: 125%; /* 20px */
+  }
+}
+
+/* General Styling */
+body {
+    font-family: 'Google Sans', sans-serif !important;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Add more general styling here as needed */
