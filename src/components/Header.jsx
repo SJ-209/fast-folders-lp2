@@ -16,6 +16,7 @@ function Header() {
         <nav className="hidden md:flex items-center gap-8">
           <a href="#features" className="text-gray-600 hover:text-gray-900">Features</a>
           <a href="#video" className="text-gray-600 hover:text-gray-900">Video</a>
+          <a href="#pricing" className="text-gray-600 hover:text-gray-900">Pricing</a>
           <a href="#faq" className="text-gray-600 hover:text-gray-900">FAQ</a>
         </nav>
         <div className="flex items-center gap-4">
