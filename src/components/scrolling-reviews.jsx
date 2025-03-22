@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import { Star } from "lucide-react"
 import review1 from "../assets/review-1.png"
 import review2 from "../assets/review-2.png"
+import review3 from "../assets/review-3.png"
 
 const reviews = [
   {
@@ -20,14 +21,13 @@ const reviews = [
     content: "Great organizational tool, recommend to all!",
     rating: 5,
   },
-  // {
-  //   id: 1,
-  //   name: "Helen",
-  //   avatar:
-  //     "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-12%20at%2022.26.45-lcrlQ0d74qIg2yfFp0zZo2UUJyzL1t.png",
-  //   content: "A great tool for ChatGPT power users.",
-  //   rating: 5,
-  // },
+  {
+    id: 3,
+    name: "Nicolas Caplat",
+    avatar: review3,
+    content: "Ahhhhhh finally ! exactly what I was looking for. For now it's perfect for my needs. Thanks !However, it would be great to be able to move a discussion from a folder to another. I hope the author will continue developping it.",
+    rating: 4,
+  },
   // {
   //   id: 1,
   //   name: "Helen",
@@ -100,7 +100,7 @@ const ScrollingReviews = () => {
         ))}
       </div> */}
       {/* Display the reviews in a static grid */}
-      <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+      <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
         {reviews.map((review) => (
           <div key={review.id} className="px-4">
             <ReviewCard {...review} />
