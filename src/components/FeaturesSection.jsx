@@ -1,5 +1,5 @@
 import React from 'react';
-import { Zap, Search, Share2, FolderPlus, FolderPen, ChevronRight } from 'lucide-react';
+import { Grip, Search, Share2, FolderPlus, FolderPen, ChevronRight } from 'lucide-react';
 
 function FeatureCard({ icon, title, description }) {
   return (
@@ -18,9 +18,9 @@ function FeaturesSection() {
         <h2 className="text-3xl font-bold text-center mb-12">Why Choose Fast Folders?</h2>
         <div className="grid md:grid-cols-3 gap-8">
           <FeatureCard
-            icon={<Zap className="w-6 h-6 text-blue-400" />}
-            title="Lightning Fast"
-            description="Instantly organize your chats by creating folders."
+            icon={<Grip className="w-6 h-6 text-blue-400" />}
+            title="Drag and Drop"
+            description="Easily drag and drop chats into folders for quick organization."
           />
           <FeatureCard
             icon={<Search className="w-6 h-6 text-blue-400" />}
