@@ -58,7 +58,7 @@ function PricingSection() {
           />
           <PricingCard
             title="Pro (limited time)"
-            price="$12"
+            price="$15"
             features={[
               "Unlimited Fast Folders",
               "Unlimited chats",
