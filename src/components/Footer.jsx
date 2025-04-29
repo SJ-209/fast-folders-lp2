@@ -14,7 +14,7 @@ function Footer() {
     },
     {
       question: "What do I get for free with Fast Folders",
-      answer: "The free version of Fast Folders gives you access to create 3 folders and add 3 chats to each folder.",
+      answer: "The free version of Fast Folders gives you access to create 3 folders and add 5 chats to each folder.",
       isOpen: false,
     },
     {
