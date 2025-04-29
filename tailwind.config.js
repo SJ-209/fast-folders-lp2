@@ -1,10 +1,35 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+module.exports = {
+  content: [
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+    // Add other paths to your source files
+  ],
   theme: {
-    extend: {},
+    extend: {
+      // Your custom theme configurations
+    },
+    screens: {
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+      '2xl': '1536px',
+      // You might have different or additional screen sizes here
+    },
   },
   plugins: [],
+  corePlugins: {
+    preflight: true, // Ensure Preflight is enabled (usually is by default)
+  },
+  variants: {
+    extend: {
+      padding: ['responsive'], // Explicitly enable responsive variants for padding
+      margin: ['responsive'], // You might need this for other utilities too
+      // Add other utilities you use with variants here
+    },
+  },
 };
 
 // /** @type {import('tailwindcss').Config} */

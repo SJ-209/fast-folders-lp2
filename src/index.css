@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,15 +12,32 @@
   }
 
   .container-padded {
-    @apply px-4 md:px-6 lg:px-8;
+    padding-left: theme('spacing.4');
+    padding-right: theme('spacing.4');
+  }
+
+  @media (min-width: theme('screens.md')) {
+    .container-padded {
+      padding-left: theme('spacing.6');
+      padding-right: theme('spacing.6');
+    }
+  }
+
+  @media (min-width: theme('screens.lg')) {
+    .container-padded {
+      padding-left: theme('spacing.8');
+      padding-right: theme('spacing.8');
+    }
   }
 
   .touch-target {
-    @apply min-w-[44px] min-h-[44px];
+    min-width: 44px;
+    min-height: 44px;
   }
 
   /* Add more custom utility classes here as needed */
 }
+
 
 /* Responsive Font Sizes */
 html {
