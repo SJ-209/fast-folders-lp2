@@ -47,7 +47,7 @@ function PricingSection() {
             price="Free"
             features={[
               "Create 3 Fast Folders",
-              "Add up to 5 chats",
+              "Add up to 5 chats in each folder",
               "Change folder colors",
               "Search folders and chats",
               "Email support",

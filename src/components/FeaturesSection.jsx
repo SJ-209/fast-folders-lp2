@@ -45,7 +45,7 @@ function FeaturesSection() {
           <FeatureCard
             icon={<ChevronRight className="w-6 h-6 text-blue-400" />}
             title="Expand folders"
-            description="Quickly sea the first 3 chats in the folder with the expand folder button."
+            description="Quickly see the first 3 chats in the folder with the expand folder button."
           />
         </div>
       </div>
