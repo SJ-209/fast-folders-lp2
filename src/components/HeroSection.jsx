@@ -4,12 +4,12 @@ import '../styles/HeroSection.css'
 
 function HeroSection() {
   return (
-    <section className="pt-32 pb-20 px-4 bg-gray-80">
+    <section className="pt-32 pb-20 px-4">
       <div className="container mx-auto text-center">
-        <h1 className="organizeChats  font-bold mb-6 text-black">
+        <h1 className="organizeChats  font-bold mb-6">
           Organize Your Chats<br />Like <span className='text-[#4796e3]'>Never</span> Before
         </h1>
-        <p className="middleText text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+        <p className="middleText text-xl mb-8 max-w-2xl mx-auto">
         Quickly create, organize and access chat folders for Google Gemini.<br/>
         Fast Folders: The Ultimate Google Gemini Chat Organizer! Available now in the Google Chrome store and Microsoft Edge addons.
         </p>

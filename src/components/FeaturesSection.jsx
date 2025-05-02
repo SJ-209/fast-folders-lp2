@@ -3,17 +3,17 @@ import { Grip, Search, Share2, FolderPlus, FolderPen, ChevronRight } from 'lucid
 
 function FeatureCard({ icon, title, description }) {
   return (
-    <div className="p-6 bg-white rounded-lg shadow-lg">
+    <div className="p-6 rounded-lg shadow-lg">
       <div className="mb-4">{icon}</div>
       <h3 className="text-xl font-bold mb-2">{title}</h3>
-      <p className="text-gray-600">{description}</p>
+      <p className="">{description}</p>
     </div>
   );
 }
 
 function FeaturesSection() {
   return (
-    <section id="features" className="py-20 bg-gray-80">
+    <section id="features" className="py-20">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12">Why Choose Fast Folders?</h2>
         <div className="grid md:grid-cols-3 gap-8">

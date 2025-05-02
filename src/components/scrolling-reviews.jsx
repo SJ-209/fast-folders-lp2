@@ -40,18 +40,18 @@ const reviews = [
 ]
 
 const ReviewCard = ({ name, avatar, content, rating }) => (
-  <div className="bg-white p-6 rounded-lg shadow-md max-w-sm mb-4">
+  <div className="p-6 rounded-lg shadow-lg max-w-sm mb-4 featureBox">
     <div className="flex items-center mb-4">
       {[...Array(rating)].map((_, i) => (
         <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
       ))}
     </div>
-    <p className="text-gray-700 mb-4">{content}</p>
+    <p className=" mb-4">{content}</p>
     <div className="flex items-center">
       <img src={avatar || "/placeholder.svg"} alt={name} className="w-10 h-10 rounded-full mr-4" />
       <div>
-        <p className="font-semibold">{name}</p>
-        <p className="text-sm text-gray-500 flex items-center">
+        <p className="font-semibold ">{name}</p>
+        <p className="text-sm flex items-center">
           <svg
             className="w-4 h-4 mr-1 text-green-500"
             fill="none"
@@ -84,7 +84,7 @@ const ScrollingReviews = () => {
   // console.log("Rendering ScrollingReviews, scrollPosition:", scrollPosition)
 
   return (
-    <div className=" overflow-hidden bg-gray-80 py-12 rounded-lg">
+    <div className=" overflow-hidden py-12 rounded-lg">
       {/* Comment out the scrolling container */}
       {/* <div
         className="flex"

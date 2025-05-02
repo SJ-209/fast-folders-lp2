@@ -36,7 +36,7 @@ function Footer() {
   };
 
   return (
-    <footer id="faq" className=" bg-gray-100 text-black py-12 w-full">
+    <footer id="faq" className=" py-12 w-full">
       <div className="container mx-auto px-4">
         <div className=" gap-8">
           <div className=" justify-center"> {/* Center the content */}
@@ -54,7 +54,7 @@ function Footer() {
                       {item.question}
                     </button>
                     {item.isOpen && (
-                      <div className="mt-2 px-4 text-gray-600 break-words">
+                      <div className="mt-2 px-4 break-words">
                         {item.answer}
                       </div>
                     )}
