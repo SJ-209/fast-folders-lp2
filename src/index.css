@@ -44,6 +44,17 @@ html {
   font-size: 93.75%; /* Default font size for smaller screens (15px) */
 }
 
+@media (min-width:410px) {
+  .organizeChats {
+    font-size: 50px; /* 24px */
+  }
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Creates responsive columns */
+    gap: 20px; /* Adds spacing between grid items */
+  }
+}
+
 @media (min-width: 640px) { /* sm: */
   html {
     font-size: 100%; /* 16px */
