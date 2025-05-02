@@ -5,6 +5,7 @@ import { Star } from "lucide-react"
 import review1 from "../assets/review-1.png"
 import review2 from "../assets/review-2.png"
 import review3 from "../assets/review-3.png"
+import review4 from "../assets/review-4.png"
 
 const reviews = [
   {
@@ -26,6 +27,13 @@ const reviews = [
     name: "Nicolas Caplat",
     avatar: review3,
     content: "Ahhhhhh finally ! exactly what I was looking for. For now it's perfect for my needs. Thanks !However, it would be great to be able to move a discussion from a folder to another. I hope the author will continue developping it.",
+    rating: 4,
+  },
+  {
+    id: 4,
+    name: "Luis Li",
+    avatar: review4,
+    content: "Great idea, this is something missing in Gemini, and this extension allows you to do it flawlessly.",
     rating: 4,
   },
   // {
