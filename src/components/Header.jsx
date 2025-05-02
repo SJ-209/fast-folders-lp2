@@ -15,10 +15,10 @@ function Header() {
           <span className="font-bold text-xl">Fast Folders</span>
         </div>
         <nav className="hidden md:flex items-center gap-8">
-          <a href="#features" className="text-gray-600 hover:text-gray-900">Features</a>
-          <a href="#video" className="text-gray-600 hover:text-gray-900">Video</a>
-          <a href="#pricing" className="text-gray-600 hover:text-gray-900">Pricing</a>
-          <a href="#faq" className="text-gray-600 hover:text-gray-900">FAQ</a>
+          <a href="#features" className=" hover:text-blue-900">Features</a>
+          <a href="#video" className=" hover:text-blue-900">Video</a>
+          <a href="#pricing" className=" hover:text-blue-900">Pricing</a>
+          <a href="#faq" className=" hover:text-blue-900">FAQ</a>
         </nav>
         <ThemeSwitch />
         <div className="flex items-center gap-4">
