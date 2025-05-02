@@ -44,7 +44,7 @@ html {
   font-size: 93.75%; /* Default font size for smaller screens (15px) */
 }
 
-@media (min-width:410px) {
+@media (min-width:310px) {
   .organizeChats {
     font-size: 50px; /* 24px */
   }
@@ -59,11 +59,17 @@ html {
   html {
     font-size: 100%; /* 16px */
   }
+  .organizeChats {
+    font-size: 50px; /* 24px */
+  }
 }
 
 @media (min-width: 768px) { /* md: */
   html {
     font-size: 106.25%; /* 17px */
+  }
+  .organizeChats {
+    font-size: 50px; /* 24px */
   }
 }
 
@@ -71,11 +77,17 @@ html {
   html {
     font-size: 112.5%; /* 18px */
   }
+  .organizeChats {
+    font-size: 50px; /* 24px */
+  }
 }
 
 @media (min-width: 1280px) { /* xl: */
   html {
     font-size: 125%; /* 20px */
+  }
+  .organizeChats {
+    font-size: 50px; /* 24px */
   }
 }
 
