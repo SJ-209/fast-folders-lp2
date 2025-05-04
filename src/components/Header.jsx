@@ -19,7 +19,7 @@ function Header() {
           <a href="#video" className=" hover:text-blue-900">Video</a>
           <a href="#pricing" className=" hover:text-blue-900">Pricing</a>
           <a href="#faq" className=" hover:text-blue-900">FAQ</a>
-          <a href="/thankyou.html" className=" hover:text-blue-900">Thankyou</a>
+          {/* <a href="/thankyou.html" className=" hover:text-blue-900">Thankyou</a> */}
           {/* <a href="/uninstall.html" className=" hover:text-blue-900">Feedback</a> */}
         </nav>
         <div className="flex items-center gap-4">
