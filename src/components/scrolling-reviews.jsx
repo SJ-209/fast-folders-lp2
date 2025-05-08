@@ -48,7 +48,7 @@ const reviews = [
 ]
 
 const ReviewCard = ({ name, avatar, content, rating }) => (
-  <div className="p-6 rounded-lg shadow-lg max-w-sm mb-4 featureBox">
+  <div id="reviews" className="p-6 rounded-lg shadow-lg max-w-sm mb-4 featureBox">
     <div className="flex items-center mb-4">
       {[...Array(rating)].map((_, i) => (
         <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
@@ -77,40 +77,36 @@ const ReviewCard = ({ name, avatar, content, rating }) => (
 )
 
 const ScrollingReviews = () => {
-  // Comment out the scrolling logic
-  // const [scrollPosition, setScrollPosition] = useState(0)
+  const [scrollPosition, setScrollPosition] = useState(0)
+  
+  // Duplicate the reviews array to create a seamless loop
+  const duplicatedReviews = [...reviews, ...reviews]
 
-  // useEffect(() => {
-  //   console.log("ScrollingReviews component mounted")
-  //   const intervalId = setInterval(() => {
-  //     setScrollPosition((prevPosition) => (prevPosition + 1) % (reviews.length * 100))
-  //   }, 50)
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setScrollPosition((prevPosition) => {
+        // Reset position when we reach the end of the original reviews
+        if (prevPosition >= reviews.length * 400) {
+          return 0
+        }
+        return prevPosition + 1
+      })
+    }, 50)
 
-  //   return () => clearInterval(intervalId)
-  // }, [])
-
-  // console.log("Rendering ScrollingReviews, scrollPosition:", scrollPosition)
+    return () => clearInterval(intervalId)
+  }, [])
 
   return (
-    <div className=" overflow-hidden py-12 rounded-lg">
-      {/* Comment out the scrolling container */}
-      {/* <div
-        className="flex"
+    <div className="overflow-hidden py-12 rounded-lg">
+      <div
+        className="flex transition-transform duration-500"
         style={{
           transform: `translateX(-${scrollPosition}px)`,
-          width: `${reviews.length * 400}px`,
+          width: `${duplicatedReviews.length * 400}px`,
         }}
       >
-        {reviews.map((review) => (
-          <div key={review.id} className="px-4" style={{ flex: "0 0 400px" }}>
-            <ReviewCard {...review} />
-          </div>
-        ))}
-      </div> */}
-      {/* Display the reviews in a static grid */}
-      <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-        {reviews.map((review) => (
-          <div key={review.id} className="px-4">
+        {duplicatedReviews.map((review, index) => (
+          <div key={`${review.id}-${index}`} className="px-4" style={{ flex: "0 0 400px" }}>
             <ReviewCard {...review} />
           </div>
         ))}

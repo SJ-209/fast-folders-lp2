@@ -18,6 +18,7 @@ function Header() {
           <a href="#features" className=" hover:text-blue-900">Features</a>
           <a href="#video" className=" hover:text-blue-900">Video</a>
           <a href="#pricing" className=" hover:text-blue-900">Pricing</a>
+          <a href="#reviews" className=" hover:text-blue-900">Reviews</a>
           <a href="#faq" className=" hover:text-blue-900">FAQ</a>
           {/* <a href="/thankyou.html" className=" hover:text-blue-900">Thankyou</a> */}
           {/* <a href="/uninstall.html" className=" hover:text-blue-900">Feedback</a> */}
