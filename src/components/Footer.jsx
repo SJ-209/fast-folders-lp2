@@ -23,8 +23,11 @@ function Footer() {
       isOpen: false,
     },
     {
-      question: "How do I contact Fast Folders support?",
-      answer: "Reachout to us fastfolders@protonmail.com.",
+      question: "What is your privacy policy?",
+      answer: "You can reach our Privacy Policy ",
+      linkText: "here",
+      linkUrl: "/PrivacyPolicy.html",
+      additionalText: " Any questions reachout to me at fastfolders@protonmail.com.",
       isOpen: false,
     },
   ]);
@@ -56,6 +59,17 @@ function Footer() {
                     {item.isOpen && (
                       <div className="mt-2 px-4 break-words">
                         {item.answer}
+                        {item.linkText && (
+                          <a 
+                            href={item.linkUrl}
+                            className="text-blue-600 hover:text-blue-800 hover:underline"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {item.linkText}
+                          </a>
+                        )}
+                        {item.additionalText}
                       </div>
                     )}
                   </div>
