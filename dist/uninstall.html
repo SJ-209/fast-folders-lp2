@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fast Folders Feedback</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <section id="feedback" class="hscreen">
+            <div class="flex flex-col items-center justify-center min-h-screen bg-gray-50 p-4">
+                <div class="w-full max-w-2xl space-y-8">
+                    <div class="flex flex-col items-center space-y-6">
+                        <img src="/images/ff3-uninstall.jpg" alt="Fast Folders Logo" class="w-20 h-20 rounded-lg">
+                        <h1 class="text-3xl md:text-4xl font-bold text-gray-800 text-center">
+                            Fast Folders Uninstall Feedback
+                        </h1>
+                    </div>
+
+                    <div class="text-center text-gray-600 mt-4">
+                        <p class="mb-4">
+                            Your feedback helps improve the extension for everyone. Please be specific about what
+                            you'd like to see improved.
+                        </p>
+                        <!-- <p>Please Include:
+                            <ul className="list-disc pl-6 space-y-1 text-gray-600">
+                                <li><strong>What you were trying to do</strong></li>
+                                <li><strong>What didn't work as expected</strong></li>
+                                <li><strong>What you'd like to see instead</strong></li>
+                                </ul>
+                        </p>
+                        <br> -->
+                        <p>Examples of helpful feedback:
+                            <ul className="list-disc pl-6 space-y-1 text-gray-600">
+                                <li><strong>"When I tried to delete a chat from a folder all chats where deleted instead."</strong>"</li>
+                                <li><strong>"It would be great if you had the ability to toggle this setting on or off."</strong>
+                                </li>
+                                <li><strong>"I'd really like it to do this feature."</strong></li>
+                            </ul>
+                        </p>
+                        <!-- Feedback Guidelines -->
+                        <div class="text-left mt-6 space-y-2">
+                            <!-- ... existing guidelines content ... -->
+                        </div>
+                    </div>
+                    <!-- Simple HTML Form -->
+                    <form 
+                        action="https://formspree.io/f/xkgrjand" 
+                        method="POST" 
+                        class="space-y-6 mt-8">
+                        <div class="space-y-4">
+                            <div>
+                                <label for="name" class="text-gray-700 mb-2 block">Name (Optional)</label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    placeholder="Your name"
+                                    class="w-full p-2 border border-gray-300 rounded-md"
+                                >
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="text-gray-700 mb-2 block">Email (Optional)</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="your@email.com"
+                                    class="w-full p-2 border border-gray-300 rounded-md"
+                                >
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex items-center mb-2">
+                                <label for="feedback" class="text-gray-700">Feedback</label>
+                                <span class="text-red-500 ml-1">*</span>
+                            </div>
+                            <textarea
+                                id="feedback"
+                                name="feedback"
+                                required
+                                placeholder="Share your experience or suggestion here. The more specific you are, the better I can help improve the extension!"
+                                class="w-full min-h-[150px] p-2 border border-gray-300 rounded-md"
+                            ></textarea>
+                        </div>
+                        
+                        <!-- Hidden Fields -->
+                        <input type="hidden" name="_subject" value="Fast Folders Uninstall Feedback">
+                        <input type="hidden" name="_next" value="https://getfastfolders.com/thankyou.html">
+                        <input type="text" name="_gotcha" style="display:none">
+                        
+                        <button
+                            type="submit"
+                            class="bg-black hover:bg-gray-800 text-white px-6 py-2 rounded-md w-full"
+                        >
+                            Submit Feedback
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
