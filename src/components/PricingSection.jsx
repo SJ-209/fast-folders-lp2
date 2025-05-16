@@ -4,7 +4,7 @@ import { Check } from 'lucide-react';
 function PricingCard({ title, price, features, buttonText, highlighted }) {
   return (
     <div className={`p-6 rounded-lg ${highlighted
-      ? 'bg-[linear-gradient(45deg,_#4796e3_20%,_#9177c7_50%,_#ca6673_85%)]  text-white ring-4 ring-blue-300'
+      ? 'bg-[linear-gradient(45deg,_#4796e3_20%,_#9177c7_50%,_#ca6673_85%)]  text-white ring-4 shadow-l ring-blue-300'
       : 'bg-white shadow-lg'
       }`}>
       <h3 className="text-xl font-bold mb-2">{title}</h3>
@@ -20,7 +20,7 @@ function PricingCard({ title, price, features, buttonText, highlighted }) {
           </li>
         ))}
       </ul>
-      <a
+      {/* <a
         href="https://chromewebstore.google.com/detail/fast-folders-the-ultimate/dgmakhnmibfdnkhopleclbfmfncdmfhf"
         target="_blank" // Opens in a new tab
         rel="noopener noreferrer" // Security best practice
@@ -31,7 +31,7 @@ function PricingCard({ title, price, features, buttonText, highlighted }) {
         }`}>
         {buttonText}
       </button>
-        </a>
+        </a> */}
     </div>
   );
 }
@@ -53,7 +53,7 @@ function PricingSection() {
               "Email support",
               "Consistent updates"
             ]}
-            buttonText="Add to Chrome"
+            // buttonText="Add to Chrome"
             highlighted={true}
           />
           <PricingCard
@@ -62,12 +62,14 @@ function PricingSection() {
             features={[
               "Unlimited Fast Folders",
               "Unlimited chats",
+              "Prompts Manager Access",
+              "Customizable Settings Access",
               "Import/Export Data",
               "Settings functionality",
               "Email Support",
               "Consistent updates"
             ]}
-            buttonText="Add to Chrome"
+            // buttonText="Add to Chrome"
             highlighted={true}
           />
           {/* <PricingCard

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grip, Search, Share2, FolderPlus, FolderPen, ChevronRight } from 'lucide-react';
+import { Grip, Search, Share2, FolderPlus, FolderPen, MessageCircle } from 'lucide-react';
 
 function FeatureCard({ icon, title, description }) {
   return (
@@ -43,9 +43,9 @@ function FeaturesSection() {
             description="Assign any color to a folder for quicker locating."
           />
           <FeatureCard
-            icon={<ChevronRight className="w-6 h-6 text-blue-400" />}
-            title="Expand folders"
-            description="Quickly see the first 3 chats in the folder with the expand folder button."
+            icon={<MessageCircle className="w-6 h-6 text-blue-400" />}
+            title="Prompts Manager"
+            description="Manage your prompts with ease. Create, edit, and delete prompts as needed."
           />
         </div>
       </div>
