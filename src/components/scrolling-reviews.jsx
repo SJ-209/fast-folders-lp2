@@ -6,6 +6,7 @@ import review1 from "../assets/review-1.png"
 import review2 from "../assets/review-2.png"
 import review3 from "../assets/review-3.png"
 import review4 from "../assets/review-4.png"
+import review5 from "../assets/review-5.png"
 
 const reviews = [
   {
@@ -35,6 +36,13 @@ const reviews = [
     avatar: review4,
     content: "Great idea, this is something missing in Gemini, and this extension allows you to do it flawlessly.",
     rating: 4,
+  },
+  {
+    id: 5,
+    name: "Fabian Pfeiffer",
+    avatar: review5,
+    content: "First of all, thank you very much for creating Fast Folders! I find it incredibly helpful for organizing my Google Gemini chats and really appreciate the functionality you've provided, I think Fast Folders is fantastic.",
+    rating: 5,
   },
   // {
   //   id: 1,
