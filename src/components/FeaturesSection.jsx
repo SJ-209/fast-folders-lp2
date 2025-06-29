@@ -34,8 +34,8 @@ function FeaturesSection() {
           />
           <FeatureCard
             icon={<FolderPlus className="w-6 h-6 text-blue-400" />}
-            title="Add folders and chats"
-            description="Quickly create folders and add chats to them."
+            title="Add folders, nested folders and chats"
+            description="Quickly create folders, nested folders and add chats to them."
           />
           <FeatureCard
             icon={<FolderPen className="w-6 h-6 text-blue-400" />}
