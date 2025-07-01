@@ -21,6 +21,8 @@ function Footer() {
       question: "Will Fast Folders be available on other browsers?",
       answer: "We are currently working on a Firefox version of Fast Folders. Stay tuned!",
       isOpen: false,
+      linkText: "on install",
+      linkUrl: "/install.html",
     },
     {
       question: "What is your privacy policy?",
