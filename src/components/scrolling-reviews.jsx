@@ -7,6 +7,7 @@ import review2 from "../assets/review-2.png"
 import review3 from "../assets/review-3.png"
 import review4 from "../assets/review-4.png"
 import review5 from "../assets/review-5.png"
+import review6 from "../assets/reveiw-6.png"
 
 const reviews = [
   {
@@ -44,15 +45,14 @@ const reviews = [
     content: "First of all, thank you very much for creating Fast Folders! I find it incredibly helpful for organizing my Google Gemini chats and really appreciate the functionality you've provided, I think Fast Folders is fantastic.",
     rating: 5,
   },
-  // {
-  //   id: 1,
-  //   name: "Helen",
-  //   avatar:
-  //     "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-12%20at%2022.26.45-lcrlQ0d74qIg2yfFp0zZo2UUJyzL1t.png",
-  //   content: "A great tool for ChatGPT power users.",
-  //   rating: 5,
-  // },
-  // ... (other reviews)
+  {
+    id: 6,
+    name: "Jude Zambarakji",
+    avatar: review6,
+    content: "Excellent layout and design. I use another Chrome extension for creating folders for ChatGPT, but this Gemini folder creator is much more beautiful, and it has the additional functionality of creating subfolders and giving folders colors. This app's designer has a keen eye for detail.",
+    rating: 5,
+  },
+  
 ]
 
 const ReviewCard = ({ name, avatar, content, rating }) => (
