@@ -111,6 +111,8 @@ const ScrollingReviews = () => {
         style={{
           transform: `translateX(-${scrollPosition}px)`,
           width: `${duplicatedReviews.length * 400}px`,
+          WebkitMask: "linear-gradient(90deg, transparent 0%, white 10%, white 90%, transparent 100%)",
+          mask: "linear-gradient(90deg, transparent 0%, white 10%, white 90%, transparent 100%)"
         }}
       >
         {duplicatedReviews.map((review, index) => (

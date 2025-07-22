@@ -47,6 +47,7 @@ function PricingSection() {
             price="Free"
             features={[
               "Create 3 Fast Folders",
+              "Create nested folders upto 4 levels",
               "Add up to 5 chats in each folder",
               "Change folder colors",
               "Search folders and chats",
@@ -62,6 +63,7 @@ function PricingSection() {
             features={[
               "Unlimited Fast Folders",
               "Unlimited chats",
+              "Create nested folders upto 4 levels",
               "Prompts Manager Access",
               "Customizable Settings Access",
               "Import/Export Data",

@@ -26,7 +26,7 @@ function Header() {
         <div className="flex items-center gap-4">
           <ThemeSwitch />
           {/* <button className="px-4 py-2 text-blue-600 hover:text-blue-700">Download</button> */}
-          <button className="px-4 py-2 bg-[linear-gradient(45deg,_#4796e3_20%,_#9177c7_50%,_#ca6673_85%)] text-white rounded-lg hover:scale-110 transform transition duration-500">
+          <button className="px-4 py-2 bg-[linear-gradient(45deg,_#4796e3_20%,_#9177c7_50%,_#ca6673_85%)] cursor-pointer text-white rounded-lg hover:scale-110 transform transition duration-500">
           <a
             href="https://chromewebstore.google.com/detail/fast-folders-the-ultimate/dgmakhnmibfdnkhopleclbfmfncdmfhf"
             target="_blank" // Opens in a new tab
