@@ -3,6 +3,9 @@ import QoverLogo from "../assets/logo-qover.png";
 import AiverseLogo from "../assets/ai-verse.png";
 import SafeHarbour from "../assets/safe-harbour.png";
 import DarkHarbour from "../assets/darkHarbour.png";
+import IconMeals from "../assets/iconmeals.png";
+import Studio from "../assets/studioancarola.png";
+import Imagine from "../assets/imagineapps.png";
 
 
 // Array of client logos //
@@ -12,6 +15,9 @@ const clients = [
     {name: "AI Verse", logo: AiverseLogo},
     {name: "Safe Harbour Solutions", logo: SafeHarbour},
     {name: "Dark Harbour Studios", logo: DarkHarbour},
+    {name: "Icon Meals", logo: IconMeals},
+    {name: "Studio Ancarola", logo: Studio},
+    {name: "Imagine Apps", logo: Imagine},
 ]
 
 const Clients = () => {
