@@ -1,60 +1,66 @@
 import React from 'react';
-import { Check } from 'lucide-react';
+import { BadgeCheck } from 'lucide-react';
 
-function PricingCard({ title, price, features, buttonText, highlighted }) {
+function PricingCard({ title, price, features, buttonText, highlighted, info }) {
   return (
-    <div className={`p-6 rounded-lg ${highlighted
-      ? 'bg-[linear-gradient(45deg,_#4796e3_20%,_#9177c7_50%,_#ca6673_85%)]  text-white ring-4 shadow-l ring-blue-300'
+    <div className={`p-2 rounded-lg ${highlighted
+      ? 'bg-white ring-8 shadow-l ring-gray-300'
       : 'bg-white shadow-lg'
       }`}>
-      <h3 className="text-xl font-bold mb-2">{title}</h3>
-      <div className="mb-4">
-        <span className="text-3xl font-bold">{price}</span>
-        {price !== 'Custom' && price !== 'Free' && <span className="text-sm"></span>}
+      <h3 className="text-lg text-gray-600 font-bold mb-1">{title}</h3>
+      <div className="mb-2">
+        <span className="text-2xl font-bold text-gray-800">{price}</span>
       </div>
-      <ul className="space-y-3 mb-6">
+      <ul className="space-y-1 mb-2 text-gray-600">
         {features.map((feature, index) => (
-          <li key={index} className="flex items-center gap-2">
-            <Check className="w-5 h-5" />
+          <li key={index} className="flex items-center gap-2 text-sm">
+            <BadgeCheck className="w-4 h-4 bg-green-300 rounded-lg opacity-50" />
             <span>{feature}</span>
           </li>
         ))}
       </ul>
-      {/* <a
-        href="https://chromewebstore.google.com/detail/fast-folders-the-ultimate/dgmakhnmibfdnkhopleclbfmfncdmfhf"
-        target="_blank" // Opens in a new tab
-        rel="noopener noreferrer" // Security best practice
-          >
-      <button className={`w-full py-2 rounded-lg ${highlighted
-        ? 'bg-white text-blue-600 hover:bg-gray-100'
-        : 'bg-blue-600 text-white hover:bg-blue-700'
-        }`}>
-        {buttonText}
-      </button>
-        </a> */}
+      <div className="flex justify-center">
+        <a
+          href="https://chromewebstore.google.com/detail/fast-folders-the-ultimate/dgmakhnmibfdnkhopleclbfmfncdmfhf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className={`w-half justify-center p-2 py-1 rounded-lg ${highlighted
+            ? 'bg-black text-white cursor-pointer'
+            : 'bg-blue-600 text-white hover:bg-blue-700'
+            }`}>
+            {buttonText}
+          </button>
+        </a>
+      </div>
+      {info && <p className="text-xs flex justify-center text-gray-500 mt-2">{info}</p>}
     </div>
   );
 }
 
 function PricingSection() {
   return (
-    <section id="pricing" className="py-20 bg-gray-80">
+    <section id="pricing" className="py-8 bg-gray-80">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12">Simple, Transparent Pricing</h2>
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <h2 className="text-2xl font-bold text-center mb-6">Simple, Transparent Pricing</h2>
+        <div className="flex flex-wrap gap-10 justify-center">
           <PricingCard
             title="Basic"
             price="Free"
             features={[
-              "Create 3 Fast Folders",
+              "Create 5 Fast Folders",
               "Create nested folders upto 4 levels",
               "Add up to 5 chats in each folder",
+              "Download chats to pdf",
               "Change folder colors",
               "Search folders and chats",
               "Email support",
               "Consistent updates"
             ]}
-            // buttonText="Add to Chrome"
+            info={[
+              "Try it now"
+            ]}
+            buttonText="Add to Chrome"
             highlighted={true}
           />
           <PricingCard
@@ -65,13 +71,17 @@ function PricingSection() {
               "Unlimited chats",
               "Create nested folders upto 4 levels",
               "Prompts Manager Access",
+              "Download chats to pdf",
               "Customizable Settings Access",
               "Import/Export Data",
               "Settings functionality",
               "Email Support",
               "Consistent updates"
             ]}
-            // buttonText="Add to Chrome"
+            info={[
+              "Try it now"
+            ]}
+            buttonText="Add to Chrome"
             highlighted={true}
           />
           {/* <PricingCard
