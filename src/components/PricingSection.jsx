@@ -42,7 +42,8 @@ function PricingSection() {
   return (
     <section id="pricing" className="py-8 bg-gray-80">
       <div className="container mx-auto px-4">
-        <h2 className="text-2xl font-bold text-center mb-6">Simple, Transparent Pricing</h2>
+        <h2 className="text-2xl font-bold text-center mb-6">Simple, Transparent Priceing</h2>
+        <h3 className="text-center text-gray-600 mb-8">All payments are made through Lemon Squeezy!</h3>
         <div className="flex flex-wrap gap-10 justify-center">
           <PricingCard
             title="Basic"
@@ -50,7 +51,7 @@ function PricingSection() {
             features={[
               "Create 5 Fast Folders",
               "Create nested folders upto 4 levels",
-              "Add up to 5 chats in each folder",
+              "Add up to 10 chats in each folder",
               "Download chats to pdf",
               "Change folder colors",
               "Search folders and chats",
