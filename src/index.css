@@ -93,15 +93,28 @@ html {
   --foreground-color:#003cff;
   --primary-text-color: #333;
   --secondary-text-color:#ffffff;
+  --alternate-text-color: #c97e37;
   --toggle-bg: #f0e544;
   --toggle-fg: #c97e37;
   --box-color: #ffffff;
 }
 
+/* [data-theme="light"] {
+  --background-color:#f6f6f6;
+  --foreground-color:#003cff;
+  --primary-text-color: #333;
+  --secondary-text-color:#ffffff;
+  --alternate-text-color: red;
+  --toggle-bg: #f0e544;
+  --toggle-fg: #c97e37;
+  --box-color: #ffffff;
+} */
+
 [data-theme="dark"] {
   --background-color:#0a0e24; 
   --primary-text-color: #f6f6f6;
   --secondary-text-color:#333;
+  --alternate-text-color: #0095ff;
   --toggle-bg: #283452;
   --toggle-fg: #00a6ff;
   --secondary-color: #242424;
@@ -114,6 +127,9 @@ body {
   background-color: var(--background-color); 
 }
 
+.alt-text {
+  color: var(--alternate-text-color);
+}
 /* Feature box styling */
 /* .featureBox {
   background-color: var(--secondary-color);

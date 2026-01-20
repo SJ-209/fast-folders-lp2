@@ -51,13 +51,13 @@ function Footer() {
                 {faqItems.map((item, index) => (
                   <div key={index} className="mb-2 mr-4">
                     <button
-                      className="text-left w-full py-2 px-4 rounded font-semibold hover:bg-gray-200 transition duration-300"
+                      className="text-left w-full py-2 px-4 rounded font-semibold cursor-pointer hover:bg-gray-300 hover:text-black transition duration-300"
                       onClick={() => toggleFAQ(index)}
                     >
                       {item.question}
                     </button>
                     {item.isOpen && (
-                      <div className="mt-2 px-4 break-words">
+                      <div className="alt-text mt-2 px-4 text-blue-200 break-words">
                         {item.answer}
                         {item.linkText && (
                           <a 

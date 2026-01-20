@@ -1,7 +1,7 @@
 import React from 'react';
 import { BadgeCheck } from 'lucide-react';
 
-function PricingCard({ title, price, features, buttonText, highlighted, info }) {
+function PricingCard({ title, price, features, buttonText, highlighted, dark, info }) {
   return (
     <div className={`p-2 rounded-lg ${highlighted
       ? 'bg-white ring-8 shadow-l ring-gray-300'
@@ -43,7 +43,7 @@ function PricingSection() {
     <section id="pricing" className="py-8 bg-gray-80">
       <div className="container mx-auto px-4">
         <h2 className="text-2xl font-bold text-center mb-6">Simple, Transparent Priceing</h2>
-        <h3 className="text-center text-gray-600 mb-8">All payments are made through Lemon Squeezy!</h3>
+        <h3 className="alt-text text-center mb-8">All payments are made through Lemon Squeezy!</h3>
         <div className="flex flex-wrap gap-10 justify-center">
           <PricingCard
             title="Basic"
