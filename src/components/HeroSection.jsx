@@ -11,7 +11,7 @@ function HeroSection() {
         </h1>
         <p className="middleText text-xl mb-8 max-w-2xl mx-auto">
         Quickly create, organize and access chat folders for Google Gemini.<br/>
-        Fast Folders: The Ultimate Google Gemini Chat Organizer! Available now in the Google Chrome store and Microsoft Edge addons.
+        Fast Folders: The Ultimate Google Gemini Chat Organizer! Available now on Chrome and Microsoft Edge.
         </p>
         <div className="flex flex-col sm:flex-row gap-12 justify-center mb-12">
           <a
