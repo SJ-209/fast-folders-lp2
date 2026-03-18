@@ -3,38 +3,90 @@ import { Check, Sparkles } from 'lucide-react';
 
 const CHROME_STORE_URL = 'https://chromewebstore.google.com/detail/fast-folders-the-ultimate/dgmakhnmibfdnkhopleclbfmfncdmfhf';
 
-function PricingCard({ title, price, features, buttonText, popular, info }) {
+// Image-inspired color palette (#53B175 green, #E6F7ED light green)
+const CARD_STYLE = {
+  green: '#53B175',
+  lightGreen: '#E6F7ED',
+  darkText: '#212836',
+  buttonBg: '#212836',
+};
+
+function PricingCard({ title, price, features, buttonText, popular, info, tag, originalPrice, perUnit, billingInfo, monthlyCredits }) {
+  const useImageStyle = true; // Both cards use the image-inspired style
+
   return (
     <div className={`
-      relative flex flex-col rounded-xl p-4 sm:p-5 w-full max-w-[320px]
-      bg-[var(--box-color)]
-      border border-white/10
-      shadow-xl hover:shadow-2xl
+      relative flex flex-col rounded-2xl p-4 sm:p-5 w-full max-w-[320px]
+      shadow-lg hover:shadow-xl
       transition-all duration-300 hover:-translate-y-1
-      ${popular ? 'ring-2 ring-[var(--alternate-text-color)] sm:scale-[1.02]' : ''}
-    `}>
+      ${useImageStyle
+        ? 'bg-white border-2'
+        : 'bg-[var(--box-color)] border border-white/10'
+      }
+      ${popular ? 'sm:scale-[1.02]' : ''}
+    `}
+    style={useImageStyle ? { borderColor: CARD_STYLE.green } : {}}
+    >
       {popular && (
-        <div className="absolute -top-2.5 left-1/2 -translate-x-1/2">
-          <span className="inline-flex items-center gap-1 px-3 py-0.5 rounded-full text-[10px] font-semibold bg-[var(--alternate-text-color)]/20 text-[var(--alternate-text-color)] border border-[var(--alternate-text-color)]/30">
-            <Sparkles className="w-3 h-3" />
+        <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+          <span
+            className="inline-flex items-center px-4 py-1 rounded-full text-xs font-bold italic text-white"
+            style={{ backgroundColor: CARD_STYLE.green }}
+          >
             Most Popular
           </span>
         </div>
       )}
       <div className="mb-4">
-        <h3 className="text-lg font-bold text-[var(--primary-text-color)] mb-1">{title}</h3>
-        <div className="flex items-baseline gap-1">
-          <span className="text-2xl sm:text-3xl font-extrabold text-[var(--primary-text-color)] tracking-tight">
+        {tag && useImageStyle && (
+          <div
+            className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-medium mb-3"
+            style={{ backgroundColor: CARD_STYLE.lightGreen, color: CARD_STYLE.darkText }}
+          >
+            <Sparkles className="w-3.5 h-3.5" style={{ color: CARD_STYLE.green }} />
+            {tag}
+          </div>
+        )}
+        {!tag && <h3 className="text-lg font-bold text-[var(--primary-text-color)] mb-1">{title}</h3>}
+        <div className="flex flex-wrap items-baseline gap-1">
+          <span className={`text-2xl sm:text-3xl font-extrabold tracking-tight ${useImageStyle ? 'text-[#212836]' : 'text-[var(--primary-text-color)]'}`}>
             {price}
           </span>
+          {perUnit && useImageStyle && (
+            <span className="text-sm text-gray-500 ml-0.5">{perUnit}</span>
+          )}
+          {originalPrice && useImageStyle && (
+            <span className="text-sm text-gray-500 line-through ml-1">{originalPrice}</span>
+          )}
         </div>
-      </div>
-      <ul className="space-y-2 mb-5 flex-1">
-        {features.map((feature, index) => (
-          <li key={index} className="flex items-start gap-2 text-xs sm:text-sm text-[var(--primary-text-color)]/90">
-            <span className="mt-0.5 flex-shrink-0 w-4 h-4 rounded-full bg-emerald-500/20 flex items-center justify-center">
-              <Check className="w-2.5 h-2.5 text-emerald-500" strokeWidth={2.5} />
+        {billingInfo && useImageStyle && (
+          <p className="text-xs text-gray-500 mt-1">{billingInfo}</p>
+        )}
+        {monthlyCredits && useImageStyle && (
+          <div
+            className="mt-3 py-2.5 px-3 rounded-lg flex items-center justify-center gap-1.5"
+            style={{ backgroundColor: CARD_STYLE.lightGreen }}
+          >
+            <Sparkles className="w-4 h-4 flex-shrink-0" style={{ color: CARD_STYLE.green }} />
+            <span className="text-sm font-medium" style={{ color: CARD_STYLE.darkText }}>
+              <span className="font-bold">{monthlyCredits.count}</span> {monthlyCredits.label}
             </span>
+          </div>
+        )}
+        {!monthlyCredits && !tag && <div className="h-1" />}
+      </div>
+      <ul className="space-y-2.5 mb-5 flex-1">
+        {features.map((feature, index) => (
+          <li key={index} className={`flex items-start gap-2 text-xs sm:text-sm ${useImageStyle ? 'text-[#212836]' : 'text-[var(--primary-text-color)]/90'}`}>
+            {useImageStyle ? (
+              <span className="mt-0.5 flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center" style={{ backgroundColor: CARD_STYLE.green }}>
+                <Check className="w-2.5 h-2.5 text-white" strokeWidth={2.5} />
+              </span>
+            ) : (
+              <span className="mt-0.5 flex-shrink-0 w-4 h-4 rounded-full bg-emerald-500/20 flex items-center justify-center">
+                <Check className="w-2.5 h-2.5 text-emerald-500" strokeWidth={2.5} />
+              </span>
+            )}
             <span>{feature}</span>
           </li>
         ))}
@@ -46,19 +98,22 @@ function PricingCard({ title, price, features, buttonText, popular, info }) {
           rel="noopener noreferrer"
           className="block"
         >
-          <button className={`
-            w-full py-2.5 px-4 rounded-lg text-sm font-semibold
-            transition-all duration-200
-            ${popular
-              ? 'bg-[var(--alternate-text-color)] hover:opacity-90 text-white shadow-lg shadow-[var(--alternate-text-color)]/25'
-              : 'bg-white/10 hover:bg-white/20 text-white border border-white/20'
-            }
-          `}>
+          <button
+            className={`
+              w-full py-2.5 px-4 rounded-lg text-sm font-bold
+              transition-all duration-200
+              ${useImageStyle
+                ? 'hover:opacity-90'
+                : 'bg-white/10 hover:bg-white/20 text-white border border-white/20'
+              }
+            `}
+            style={useImageStyle ? { backgroundColor: CARD_STYLE.buttonBg, color: CARD_STYLE.green } : {}}
+          >
             {buttonText}
           </button>
         </a>
         {info && (
-          <p className="text-xs text-center text-[var(--primary-text-color)]/60">
+          <p className={`text-xs text-center ${useImageStyle ? 'text-gray-500' : 'text-[var(--primary-text-color)]/60'}`}>
             {Array.isArray(info) ? info[0] : info}
           </p>
         )}
@@ -81,6 +136,7 @@ function PricingSection() {
           <PricingCard
             title="Basic"
             price="Free"
+            monthlyCredits={{ count: "7", label: "Fast Folders" }}
             features={[
               "Create 7 Fast Folders",
               "Create nested folders up to 4 levels",
@@ -96,21 +152,17 @@ function PricingSection() {
             buttonText="Add to Chrome"
           />
           <PricingCard
-            title="Premium Subscription"
-            price="$47 per year"
+            tag="Essential"
+            price="$50"
+            perUnit="/ year"
+            originalPrice="$99"
+            billingInfo="Billed $50.00 yearly"
+            monthlyCredits={{ count: "Unlimited", label: "Folders & Chats" }}
             features={[
+              "Access to all features",
               "Unlimited Fast Folders",
-              "Unlimited chats",
-              "Fast Folder Cloud Sync",
-              "Sync across multiple devices",
-              "Create nested folders up to 4 levels",
-              "Prompts Manager Access",
-              "Download chats to pdf",
-              "Customizable Settings Access",
-              "Import/Export Data",
-              "Settings functionality",
-              "Email Support",
-              "Consistent updates"
+              "Fast Folder Cloud",
+              "Sync across multiple devices"
             ]}
             info="Try it now"
             buttonText="Add to Chrome"
