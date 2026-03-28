@@ -194,3 +194,27 @@ a.pulsingButton:hover {
     box-shadow: 0 0 0 30px rgba(232, 76, 61, 0);
   }
 }
+
+/* Horizontal review marquee — CSS animation avoids JS re-renders (smoother on mobile). */
+@keyframes reviews-marquee {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.reviews-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: reviews-marquee 110s linear infinite;
+  backface-visibility: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reviews-marquee-track {
+    animation: none;
+    transform: none;
+  }
+}

@@ -153,10 +153,10 @@ function PricingSection() {
           />
           <PricingCard
             tag="Essential"
-            price="$50"
+            price="$47"
             perUnit="/ year"
             originalPrice="$99"
-            billingInfo="Billed $50.00 yearly"
+            billingInfo="Billed $47.00 yearly"
             monthlyCredits={{ count: "Unlimited", label: "Folders & Chats" }}
             features={[
               "Access to all features",
