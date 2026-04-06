@@ -155,8 +155,8 @@ function PricingSection() {
             tag="Essential"
             price="$47"
             perUnit="/ year"
-            originalPrice="$99"
-            billingInfo="Billed $47.00 yearly"
+            originalPrice="$50"
+            billingInfo="Billed $33.00 yearly"
             monthlyCredits={{ count: "Unlimited", label: "Folders & Chats" }}
             features={[
               "Access to all features",
