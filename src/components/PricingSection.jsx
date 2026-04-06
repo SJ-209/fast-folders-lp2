@@ -153,7 +153,7 @@ function PricingSection() {
           />
           <PricingCard
             tag="Essential"
-            price="$47"
+            price="$33"
             perUnit="/ year"
             originalPrice="$50"
             billingInfo="Billed $33.00 yearly"
