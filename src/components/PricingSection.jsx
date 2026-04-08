@@ -5,8 +5,8 @@ const CHROME_STORE_URL = 'https://chromewebstore.google.com/detail/fast-folders-
 
 // Image-inspired color palette (#53B175 green, #E6F7ED light green)
 const CARD_STYLE = {
-  green: '#53B175',
-  lightGreen: '#E6F7ED',
+  green: '#4796e3',
+  lightGreen: '#dce2e6',
   darkText: '#212836',
   buttonBg: '#212836',
 };
@@ -130,7 +130,7 @@ function PricingSection() {
           Simple, Transparent Pricing
         </h2>
         <p className="alt-text text-center mb-8 text-sm sm:text-base">
-          All payments are made through Lemon Squeezy!
+          <strong>All payments are made through Lemon Squeezy!</strong>
         </p>
         <div className="flex flex-col sm:flex-row gap-6 sm:gap-4 justify-center items-center max-w-3xl mx-auto">
           <PricingCard
@@ -152,6 +152,24 @@ function PricingSection() {
             buttonText="Add to Chrome"
           />
           <PricingCard
+            // tag="Essential"
+            price="$2.54"
+            perUnit="/ month"
+            originalPrice="$50"
+            billingInfo="Billed $2.54 monthly"
+            monthlyCredits={{ count: "Unlimited", label: "Folders & Chats" }}
+            features={[
+              "Access to all features",
+              "Unlimited Fast Folders",
+              "Create nested folders up to 4 levels",
+              "Download chats to pdf",
+              "Fast Folder Cloud",
+              "Sync across multiple devices"
+            ]}
+            info="Try it now"
+            buttonText="Add to Chrome"
+          />
+          <PricingCard
             tag="Essential"
             price="$33"
             perUnit="/ year"
@@ -161,6 +179,8 @@ function PricingSection() {
             features={[
               "Access to all features",
               "Unlimited Fast Folders",
+              "Create nested folders up to 4 levels",
+              "Download chats to pdf",
               "Fast Folder Cloud",
               "Sync across multiple devices"
             ]}

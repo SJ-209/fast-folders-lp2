@@ -4,7 +4,7 @@ function Footer() {
   const [faqItems, setFaqItems] = useState([
     {
       question: "Is my data safe with Fast Folders?",
-      answer: "Yes! We take security very seriously. Your conversation data is stored on your local machine and never leaves your computer.",
+      answer: "If you enable Cloud Sync, your data is stored securely on servers provided by our third-party processor, Supabase. All data transmitted to our cloud servers is encrypted using modern cryptography (HTTPS/SSL).",
       isOpen: false,
     },
     {
