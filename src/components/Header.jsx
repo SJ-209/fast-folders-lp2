@@ -21,7 +21,7 @@ function Header() {
           <a href="#reviews" className=" hover:text-blue-300">Reviews</a>
           <a href="#faq" className=" hover:text-blue-300">FAQ</a>
           <a href="/PrivacyPolicy.html" className=" hover:text-blue-300">Privacy Policy</a>
-          {/* <a href="/fastfolderscloud.html" className=" hover:text-blue-900">ffcloud</a> */}
+          <a href="/fastfolderscloud.html" className=" hover:text-blue-900">ffcloud</a>
           {/* <a href="/uninstall.html" className=" hover:text-blue-900">Feedback</a> */}
         </nav>
         <div className="flex items-center gap-4">
