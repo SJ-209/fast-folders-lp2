@@ -136,9 +136,9 @@ function PricingSection() {
           <PricingCard
             title="Basic"
             price="Free"
-            monthlyCredits={{ count: "7", label: "Fast Folders" }}
+            monthlyCredits={{ count: "10", label: "Fast Folders" }}
             features={[
-              "Create 7 Fast Folders",
+              "Create 10 Fast Folders",
               "Create nested folders up to 4 levels",
               "Add up to 10 chats in each folder",
               "Download chats to pdf",
