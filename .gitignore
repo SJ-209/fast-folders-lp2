@@ -4,3 +4,4 @@ out/
 .vercel/
 .DS_Store
 src/assets/FF-Demo.mov
+dist/
