@@ -32,7 +32,7 @@ const Clients = () => {
                 <div key={client.name} className="flex items-center">
                 <div className=" px-4 py-2 w-full text-center">
                     <img
-                    src={client.logo}
+                    src={client.logo.src}
                     alt={client.name}
                     className="h-16 rounded-lg w-auto mx-auto mb-2 filter grayscale hover:grayscale-0 transition-all"
                     />

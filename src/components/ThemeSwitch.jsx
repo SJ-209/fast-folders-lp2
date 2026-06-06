@@ -1,11 +1,15 @@
+'use client';
+
 import React, { useEffect } from "react";
 import { Moon, Sun } from "lucide-react";   
 
 function ThemeSwitch() {
-    const [theme, setTheme] = React.useState(() => {
-        // Check for saved theme or default to light
-        return localStorage.getItem("theme") || "dark";
-    });
+    const [theme, setTheme] = React.useState("dark");
+
+    useEffect(() => {
+        const savedTheme = localStorage.getItem("theme") || "dark";
+        setTheme(savedTheme);
+    }, []);
     
     useEffect(() => {
         // Update data-theme attribute and save to localStorage
