@@ -1,5 +1,6 @@
 node_modules/
 .next/
+out/
 .vercel/
 .DS_Store
 src/assets/FF-Demo.mov
