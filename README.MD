@@ -34,7 +34,7 @@ The Fast Folders landing page serves as the primary online presence for the Fast
 ## Technologies Used
 
 - **React:** A JavaScript library for building user interfaces.
-- **Vite:** A fast build tool and development server for modern web projects.
+- **Next.js:** The React framework used for routing, metadata, and production builds.
 - **Tailwind CSS:** A utility-first CSS framework for rapidly styling HTML elements.
 - **Lucide React:** A library of beautiful and consistent icons for React applications.
 - **JavaScript (ES6+):** The primary programming language for building the landing page.
@@ -46,19 +46,18 @@ The project structure is organized as follows:
 ```
 fast-folders-lp2/
 ├── src/
+│   ├── app/               # Next.js App Router routes and global styles
+│   │   ├── globals.css    # Main CSS file with Tailwind directives
+│   │   ├── layout.jsx     # Root layout and metadata
+│   │   └── page.jsx       # Homepage route
 │   ├── components/        # React components
 │   │   ├── Footer.jsx       # Footer component
 │   │   ├── HeroSection.jsx  # Hero section component
 │   │   └── ...            # Other components
 │   ├── styles/            # CSS styles
-│   │   ├── index.css      # Main CSS file with Tailwind directives
 │   │   └── ...            # Other CSS files
-│   ├── App.jsx            # Main application component
-│   ├── main.jsx           # Entry point for the React application
-│   └── index.html         # HTML entry point
 ├── public/             # Static assets (e.g., images)
-├── vite.config.js       # Vite configuration file
-├── postcss.config.cjs   # PostCSS configuration file
+├── postcss.config.js    # PostCSS configuration file
 ├── tailwind.config.js   # Tailwind CSS configuration file
 ├── package.json         # Project dependencies and scripts
 ├── package-lock.json    # Dependency lock file
@@ -97,7 +96,7 @@ To start the development server, use the following command:
 npm run dev
 ```
 
-This will start the Vite development server, and you can view the landing page in your browser at `http://localhost:5173/` (or the address provided by Vite).
+This will start the Next.js development server, and you can view the landing page in your browser at `http://localhost:3000/`.
 
 ### Building for Production
 
@@ -107,7 +106,7 @@ To build the landing page for production, use the following command:
 npm run build
 ```
 
-This will generate an optimized build of the landing page in the `dist` directory.
+This will generate an optimized Next.js production build in the `.next` directory.
 
 ## Deployment
 
@@ -118,7 +117,7 @@ The landing page can be deployed to various hosting platforms, such as:
 - **GitHub Pages:** A static site hosting service provided by GitHub.
 - **Render:** A unified platform to build and run all your apps and websites.
 
-To deploy to Render, connect your GitHub repository to Render and configure the build command and publish directory.
+To deploy to Render, connect your GitHub repository to Render and configure the build command as `npm run build` and the start command as `npm run start`.
 
 
 ## License

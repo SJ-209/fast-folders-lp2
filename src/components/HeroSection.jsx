@@ -1,6 +1,5 @@
 import React from 'react';
 // import { ArrowRight, Github } from 'lucide-react';
-import '../styles/HeroSection.css'
 
 function HeroSection() {
   return (

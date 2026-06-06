@@ -89,6 +89,8 @@ const reviews = [
 const SLIDE_CLASS =
   "shrink-0 px-4 box-border w-[min(100vw-2rem,400px)] max-w-[400px]"
 
+const getImageSrc = (image) => (typeof image === "string" ? image : image?.src)
+
 const ReviewCard = ({ name, avatar, content, rating }) => (
   <div className="p-6 rounded-lg shadow-lg w-full max-w-sm mb-4 featureBox">
     <div className="flex items-center mb-4">
@@ -98,7 +100,7 @@ const ReviewCard = ({ name, avatar, content, rating }) => (
     </div>
     <p className=" mb-4">{content}</p>
     <div className="flex items-center">
-      <img src={avatar || "/placeholder.svg"} alt={name} className="w-10 h-10 rounded-full mr-4" />
+      <img src={getImageSrc(avatar) || "/placeholder.svg"} alt={name} className="w-10 h-10 rounded-full mr-4" />
       <div>
         <p className="font-semibold ">{name}</p>
         <p className="text-sm flex items-center">
