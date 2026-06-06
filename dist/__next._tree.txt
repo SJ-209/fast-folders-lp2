@@ -7,4 +7,4 @@
 :HL["/_next/static/media/iconmeals.407fqt_7v_bhm.png","image"]
 :HL["/_next/static/media/studioancarola.0ly3d15gpmgxp.png","image"]
 :HL["/_next/static/media/imagineapps.22mjlffwsdie6.png","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"W8RgQzu0gQa44IJkWOlQo"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"xCbe5fKI72QG-m-GLZ67B"}
