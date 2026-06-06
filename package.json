@@ -6,7 +6,6 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "postbuild": "rm -rf dist && mv out dist",
     "lint": "eslint src/**/*.{js,jsx}",
     "start": "next start"
   },
