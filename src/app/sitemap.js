@@ -1,0 +1,9 @@
+export default function sitemap() {
+  return [
+    {
+      url: 'https://www.getfastfolders.com',
+      lastModified: new Date(),
+      priority: 1,
+    },
+  ]
+}
