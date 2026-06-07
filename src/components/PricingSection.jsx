@@ -168,7 +168,7 @@ function PricingSection() {
             buttonText="Add to Chrome"
           /> */}
           <PricingCard
-            tag="For the efficient Individuals"
+            tag="For The Efficient Individuals"
             price="$27"
             perUnit="/ year"
             originalPrice="$47.00"
@@ -187,7 +187,7 @@ function PricingSection() {
             popular
           />
           <PricingCard
-            tag="For the efficient Teams"
+            tag="For The Efficient Teams"
             price="$200"
             perUnit="/ year"
             originalPrice="$266"
