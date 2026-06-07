@@ -6,7 +6,7 @@ function HeroSection() {
     <section className="pt-32 pb-20 px-4">
       <div className="container mx-auto text-center">
         <h1 className="organizeChats  font-bold mb-6">
-        The Folders Google Gemini <br /> <span className='text-[#4796e3]'>Forgot</span> to build
+        The Folders Google Gemini <br /> <span className='text-[#4796e3]'>Forgot</span> to Build
         </h1>
         <p className="middleText text-xl mb-8 max-w-2xl mx-auto">
         Stop scrolling through hundreds of Gemini chats<br/>
