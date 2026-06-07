@@ -15,7 +15,7 @@ function FeaturesSection() {
   return (
     <section id="features" className="py-20">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12">Why Choose Fast Folders?</h2>
+        <h2 className="text-3xl font-bold text-center mb-12">What Fast Folders Gives You</h2>
         <div className="grid md:grid-cols-3 features gap-8">
           <FeatureCard
             icon={<Grip className="w-6 h-6 text-blue-400" />}
@@ -29,8 +29,8 @@ function FeaturesSection() {
           />
           <FeatureCard
             icon={<Share2 className="w-6 h-6 text-blue-400" />}
-            title="Easy Backups"
-            description="Quick and easy import/export feature for backing up folder structures."
+            title="Fast Folder Cloud"
+            description="Sync your folder structures, chats, Prompts and settings across all your laptops and desktops."
           />
           <FeatureCard
             icon={<FolderPlus className="w-6 h-6 text-blue-400" />}

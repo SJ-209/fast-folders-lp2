@@ -6,11 +6,11 @@ function HeroSection() {
     <section className="pt-32 pb-20 px-4">
       <div className="container mx-auto text-center">
         <h1 className="organizeChats  font-bold mb-6">
-          Organize Your Chats<br />Like <span className='text-[#4796e3]'>Never</span> Before
+        The Folders Google Gemini <br /> <span className='text-[#4796e3]'>Forgot</span> to build
         </h1>
         <p className="middleText text-xl mb-8 max-w-2xl mx-auto">
-        Quickly create, organize and access chat folders for Google Gemini.<br/>
-        Fast Folders: The Ultimate Google Gemini Chat Organizer! Available now on Chrome and Microsoft Edge.
+        Stop scrolling through hundreds of Gemini chats<br/>
+        Join 8,000+ users who organise their AI workspace with Fast Folders free to install.
         </p>
         <div className="flex flex-col sm:flex-row gap-12 justify-center mb-12">
           <a

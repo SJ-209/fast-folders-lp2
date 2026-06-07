@@ -16,12 +16,27 @@ function Footer() {
     },
     {
       question: "What do I get for free with Fast Folders",
-      answer: "The free version of Fast Folders gives you access to create 3 folders and add 5 chats to each folder.",
+      answer: "The free version of Fast Folders gives you access to create 10 folders and add 5 chats to each folder.",
+      isOpen: false,
+    },
+    {
+      question: "Can I sync across multiple devices?",
+      answer: "Yes, you can sync your folders, chats, Prompts and settings across all your laptops and desktops with Fast Folders Cloud.",
       isOpen: false,
     },
     {
       question: "Will Fast Folders be available on other browsers?",
-      answer: "We are currently working on a Firefox version of Fast Folders. Stay tuned!",
+      answer: "It is currently available on Chrome and Microsoft Edge. We are currently working on a Firefox version of Fast Folders. Stay tuned!",
+      isOpen: false,
+    },
+    {
+      question: "Does Google Gemini have folders?",
+      answer: "No, Google Gemini does not have folders. Thats why I made Fast Folders, it is the ultimate Google Gemini chat organiser.",
+      isOpen: false,
+    },
+    {
+      question: "What's the difference between free and Pro?",
+      answer: "The free version of Fast Folders gives you access to create 10 folders and add 5 chats to each folder. The Pro version gives you access to create unlimited folders and add unlimited chats to each folder, all features and includes FAst Folders Cloud so yuou can be sure your data is constantly and securly backed up.",
       isOpen: false,
     },
     {
@@ -104,7 +119,7 @@ function Footer() {
           </div>
         </div>
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-          <p>© 2025 Fast Folders. All rights reserved.</p>
+          <p>© 2026 Fast Folders. All rights reserved.</p>
         </div>
       </div>
     </footer>

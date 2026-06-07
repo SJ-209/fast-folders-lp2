@@ -100,7 +100,7 @@ function PricingCard({ title, price, features, buttonText, popular, info, tag, o
         >
           <button
             className={`
-              w-full py-2 px-3 rounded-lg text-xs font-bold
+              w-full py-2 px-3 rounded-lg text-xs font-bold cursor-pointer hover:scale-105
               transition-all duration-200
               ${useImageStyle
                 ? 'hover:opacity-90'
